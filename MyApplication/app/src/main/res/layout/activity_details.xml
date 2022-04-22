@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Back"
+            android:backgroundTint="@color/white"
+            android:textColor="#5FB4DA"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Station 352"
+                android:textSize="20dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Desc:"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Station 352"
+                android:textSize="20dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Timestamp:"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_timestamp"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Station 352"
+                android:textSize="20dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Lat:"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_lat"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Station 352"
+                android:textSize="20dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="lng:"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_lng"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Station 352"
+                android:textSize="20dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="addr:"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_addr"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Station 352"
+                android:textSize="20dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="e:"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_e"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Station 352"
+                android:textSize="20dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="zip:"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_zip"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Station 352"
+                android:textSize="20dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

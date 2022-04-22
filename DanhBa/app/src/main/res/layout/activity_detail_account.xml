@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailAccount"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="#607d8d">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/edit"
+            android:src="@drawable/ic_baseline_star_border_24" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/menu"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="270dp"
+            android:src="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="sans-serif-black"
+            android:padding="10dp"
+            android:text="Lê Thanh Quý"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <LinearLayout
+            android:id="@+id/menu_show"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/menu"
+            android:layout_alignEnd="@+id/menu"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/border"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Delete"
+                android:gravity="center"
+                android:clickable="true"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText,KeyboardInaccessibleWidget" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="8dp">
+
+        <ImageView
+            android:id="@+id/icon_call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_baseline_phone_24"
+            app:tint="#768787" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/icon_call"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/icon_chat"
+            android:layout_toEndOf="@+id/icon_call"
+            android:fontFamily="sans-serif-black"
+            android:text="0384933379"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_number"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/icon_chat"
+            android:layout_toEndOf="@+id/icon_call"
+            android:text="Mobile"
+            android:textSize="15dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <ImageView
+            android:id="@+id/icon_chat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_baseline_chat_24"
+            app:tint="#768787" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="8dp">
+        <ImageView
+            android:id="@+id/icon_email"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_baseline_email_24"
+            app:tint="#768787" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/icon_email"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="lethanhquy123321@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="15dp"
+                tools:ignore="HardcodedText,SpUsage" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
